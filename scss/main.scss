@@ -1,0 +1,18 @@
+//Base
+
+@import './base/_reset';
+@import './base/vars';
+// @import './base/mixins';
+@import './base/base';
+
+//Blocks
+
+@import './blocks/header';
+@import './blocks/free-meals';
+@import './blocks/about-us';
+@import './blocks/benefits';
+@import './blocks/nutrition-plans';
+@import './blocks/delivery';
+@import './blocks/serve';
+@import './blocks/footer';
+

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+@font-face {
+  font-family: 'Stolzl-medium';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(./../fonts/stolzl_medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Stolzl-regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./../fonts/stolzl_regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Stolzl-bold';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(./../fonts/stolzl_bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Stolzl-book';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./../fonts/stolzl_book.woff2) format("woff2");
+}
+html {
+  scroll-behavior: smooth;
+ }
+body {
+  font-family: $font-main;
+  background-color: $background-color;
+  color: $light-grey;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grey;
+  transition: color 0.2s ease-in;
+
+  &:hover {}
+}

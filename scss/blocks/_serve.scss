@@ -1,0 +1,65 @@
+.service {
+  padding-top: 50px;
+}
+
+.service-flex {
+  background-color: $light-green;
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+  margin-bottom: 65px;
+  gap: 7px;
+}
+
+.service-flex__left {
+  padding: 65px 0 70px 110px;
+  max-width: 526px;
+}
+
+.serve__text {
+  font-size: 12px;
+  color: $lighter-grey;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.service-flex__contacts {
+  display: flex;
+  align-items: center;
+  color: $dark-grey;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.service-flex__contacts img {
+  width: 27px;
+  height: 27px;
+}
+
+.flex-contacts__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-contacts__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.outline__btn-green {
+  background-color: $light-green;
+}
+
+.service-flex__right {
+  position: absolute;
+  transform: scale(0.8);
+  right: -30%;
+  top: -5%;
+}

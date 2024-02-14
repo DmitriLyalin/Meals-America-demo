@@ -1,0 +1,89 @@
+.free-meals {
+  position: relative;
+  overflow: hidden;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.flex-container__left {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding-top: 200px;
+  padding-bottom: 115px;
+}
+
+.ellipse {
+  position: absolute;
+  top: 30px;
+  left: -100px;
+  z-index: -1;
+  width: 900px;
+  height: 900px;
+  background-color: $light-green;
+  border-radius: 900px;
+}
+
+.h1-title {
+  color: $accent;
+  font-family: $font-bold;
+  font-size: 48px;
+  font-weight: 700;
+
+  & span {
+    color: $dark-grey;
+    font-family: $font-regular;
+    font-weight: 400;
+  }
+}
+
+.main__text {
+  color: #366126;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+
+.flex-row {
+  display: flex;
+  gap: 30px;
+}
+
+.main__btn {
+  height: 55px;
+  width: 200px;
+  font-size: 12px;
+  border-radius: 80px;
+}
+
+.outline__btn {
+  color: $accent;
+  background-color: $background-color;
+  border: 2px solid $accent;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.main__img {
+  position: absolute;
+  max-height: 670px;
+  top: 100;
+  right: 0;
+  z-index: -2;
+  border-top-left-radius: 300px;
+}
+
+.scroll {
+  top: 100px
+}
+
+.elipse-scroll {
+  top: 130px;
+}

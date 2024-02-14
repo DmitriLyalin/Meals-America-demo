@@ -1,0 +1,80 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $white;
+  z-index: 10;
+  -webkit-transition: all 0.3s ease-in-out;
+  webkit-transform: translate3d(0, -50%, 0);
+  transform: top;
+  transition-property: transform;
+  transition-duration: .2s;
+  transition-delay: .4s;
+  transition: 0.3s ease-in;
+}
+
+.sticky+.free-meals {
+  padding-top: 100px;
+}
+
+.header__top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.logo {
+  max-width: 229px;
+}
+
+.header__nav {
+  padding-top: 10px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__list-item {
+  font-family: $font-regular;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.2s ease-in;
+  padding: 3px 5px;
+
+
+  &:hover {
+    background-color: $muted;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in-out,
+      color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+  }
+}
+
+.button {
+  font-size: 12px;
+  padding: 15px 40px;
+  border-radius: 30px;
+  background-color: $accent;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $font-bold;
+  text-align: center;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: $accent-hover;
+  }
+}
