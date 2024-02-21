@@ -26,6 +26,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include mediaTablet {
+    justify-content: space-evenly;
+  }
+
+  @include mediaMobile {
+    justify-content: space-between;
+  }
 }
 
 
@@ -35,6 +43,18 @@
 
 .header__nav {
   padding-top: 10px;
+
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+.header__nav-button {
+  display: none;
+
+  @include mediaTablet {
+    display: block;
+  }
 }
 
 .nav__list {
@@ -64,8 +84,8 @@
 }
 
 .button {
-  font-size: 12px;
-  padding: 15px 40px;
+  font-size: 13px;
+  padding: 17px 44px;
   border-radius: 30px;
   background-color: $accent;
   color: $white;
@@ -74,7 +94,23 @@
   text-align: center;
   transition: background-color 0.2s ease-in;
 
+
   &:hover {
     background-color: $accent-hover;
+  }
+
+  @include mediaFullHD {
+    font-size: 16px;
+  }
+}
+
+.header__btn {
+  @include mediaTablet {
+    margin-left: auto;
+    margin-right: 2%;
+  }
+
+  @include mediaMobile {
+    display: none;
   }
 }

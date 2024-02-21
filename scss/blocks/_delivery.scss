@@ -1,9 +1,10 @@
 .delivery {
-  background-image: url(../img/delivery/delivery_bg.png);
+  background-image: url(./../img/delivery/delivery_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
-  max-width: 100%;
+  height: 420px;
+  background-position: center center;
+
 }
 
 .delivery-flex {
@@ -11,22 +12,28 @@
 }
 
 .delivery__infobox {
-  position: absolute;
+  // position: absolute;
   max-width: 500px;
-  top: 50%;
-  left: 50%;
-  transform: translate(20%, 50%);
+  margin-top: 100px;
+  margin-left: 50%;
 }
 
 .delivery__headline {
   font-family: $font-regular;
   text-align: left;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.8em;
   margin-bottom: 30px;
+
+  @include mediaFullHD {
+    font-size: 3em;
+  }
+
+  @include mediaMobile {
+    font-size: 1.5em;
+  }
 }
 
-.title-h2_white {}
 
 .title-h2_green {
   color: $green-accent;

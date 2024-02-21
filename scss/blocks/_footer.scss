@@ -12,10 +12,19 @@
 
 .footer-row {
   display: flex;
-  gap: 180px;
+  gap: 15%;
   align-items: flex-start;
   font-size: 10px;
   margin-bottom: 50px;
+
+  @include mediaFullHD {
+    justify-content: space-around;
+  }
+
+  @include mediaTablet {
+    gap: 10%;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-info {

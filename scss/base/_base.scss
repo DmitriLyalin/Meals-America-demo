@@ -31,21 +31,32 @@
   font-weight: 400;
   src: url(./../fonts/stolzl_book.woff2) format("woff2");
 }
+
 html {
   scroll-behavior: smooth;
- }
+}
+
 body {
   font-family: $font-main;
   background-color: $background-color;
   color: $light-grey;
   font-size: 14px;
   overflow-x: hidden;
+
+  @include mediaFullHD {
+    font-size: 18px;
+  }
 }
 
 .container {
   margin: 0 auto;
   max-width: 1110px;
   padding: 0 15px;
+
+  @include mediaFullHD {
+    max-width: 1470px;
+    padding: 0 30px;
+  }
 }
 
 a {

@@ -6,6 +6,11 @@
 .flex-container {
   display: flex;
   justify-content: space-between;
+
+  @include mediaMobile {
+    flex-direction: column;
+  }
+
 }
 
 
@@ -15,6 +20,12 @@
   gap: 33px;
   padding-top: 200px;
   padding-bottom: 115px;
+
+  @include mediaMobile {
+    padding-top: 50px;
+    text-align: center;
+    gap: 10px;
+  }
 }
 
 .ellipse {
@@ -26,6 +37,24 @@
   height: 900px;
   background-color: $light-green;
   border-radius: 900px;
+
+  @include mediaFullHD {
+    width: 1080px;
+    height: 1080px;
+    border-radius: 1080px;
+  }
+
+  @include mediaTablet {
+    width: 680px;
+    height: 680px;
+    border-radius: 680px;
+  }
+
+  @include mediaMobile {
+    display: none;
+  }
+
+
 }
 
 .h1-title {
@@ -33,6 +62,10 @@
   font-family: $font-bold;
   font-size: 48px;
   font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 3em;
+  }
 
   & span {
     color: $dark-grey;
@@ -51,13 +84,26 @@
 .flex-row {
   display: flex;
   gap: 30px;
+
+  @include mediaMobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
 }
 
 .main__btn {
-  height: 55px;
-  width: 200px;
-  font-size: 12px;
+  padding: 18px 42px;
+  // height: 55px;
+  // width: 200px;
+  font-size: 14px;
   border-radius: 80px;
+
+  @include mediaFullHD {
+    font-size: 16px;
+    width: 220px;
+  }
 }
 
 .outline__btn {
@@ -73,11 +119,22 @@
 
 .main__img {
   position: absolute;
-  max-height: 670px;
+  max-height: 850px;
   top: 100;
   right: 0;
   z-index: -2;
   border-top-left-radius: 300px;
+
+  @include mediaFullHD {}
+
+  @include mediaTablet {
+    max-height: 650px;
+  }
+
+  @include mediaMobile {
+    display: none;
+  }
+
 }
 
 .scroll {
