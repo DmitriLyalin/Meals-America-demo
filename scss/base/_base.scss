@@ -64,5 +64,8 @@ a {
   color: $dark-grey;
   transition: color 0.2s ease-in;
 
-  &:hover {}
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }

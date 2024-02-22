@@ -1,3 +1,15 @@
+//Mobile menu on click
+
+const navBtn = document.querySelector('.nav__icon-button');
+const navIcon = document.querySelector('.nav-icon');
+const nav = document.querySelector('.header__top-row');
+
+navBtn.onclick = function () {
+  navIcon.classList.toggle('nav-icon--active');
+  nav.classList.toggle('header__top-row--mobile');
+  document.body.classList.toggle('no-scroll');
+}
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -5,6 +17,8 @@ window.onscroll = function() {myFunction()};
 let  header = document.getElementById("myHeader");
 let image = document.getElementById("myImg")
 let ellipse = document.getElementById("myEllipse")
+
+
 
 // Get the offset position of the navbar
 let sticky = header.offsetTop;

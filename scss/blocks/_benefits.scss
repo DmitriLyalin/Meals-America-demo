@@ -1,6 +1,11 @@
 .benefits {
   padding-top: 57px;
   padding-bottom: 150px;
+
+  @include mediaTablet {
+    padding-top: 0;
+    padding-bottom: 10%;
+  }
 }
 
 .benefits-flex {
