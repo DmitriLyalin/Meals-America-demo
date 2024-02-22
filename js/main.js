@@ -10,6 +10,15 @@ navBtn.onclick = function () {
   document.body.classList.toggle('no-scroll');
 }
 
+const links = document.querySelectorAll('.nav__list a')
+
+links.forEach(l => {
+  // BIND CLICK EVENT ON ALL LINKS
+  l.addEventListener('click', () => {
+    // ON CLICK, REMOVE active CLASS FROM navBarLinks
+    navBtn.onclick()
+  })
+})
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
