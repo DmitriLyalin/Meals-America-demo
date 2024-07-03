@@ -8,7 +8,7 @@ navBtn.onclick = function () {
   navIcon.classList.toggle('nav-icon--active');
   nav.classList.toggle('header__top-row--mobile');
   document.body.classList.toggle('no-scroll');
-  const links = document.querySelectorAll('.nav__list a')
+  const links = document.querySelectorAll('.header__top-row--mobile a')
 
 links.forEach(l => {
   // BIND CLICK EVENT ON ALL LINKS
