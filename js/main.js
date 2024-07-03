@@ -8,9 +8,7 @@ navBtn.onclick = function () {
   navIcon.classList.toggle('nav-icon--active');
   nav.classList.toggle('header__top-row--mobile');
   document.body.classList.toggle('no-scroll');
-}
-
-const links = document.querySelectorAll('.nav__list a')
+  const links = document.querySelectorAll('.nav__list a')
 
 links.forEach(l => {
   // BIND CLICK EVENT ON ALL LINKS
@@ -19,6 +17,17 @@ links.forEach(l => {
     navBtn.onclick()
   })
 })
+}
+
+// const links = document.querySelectorAll('.nav__list a')
+
+// links.forEach(l => {
+//   // BIND CLICK EVENT ON ALL LINKS
+//   l.addEventListener('click', () => {
+//     // ON CLICK, REMOVE active CLASS FROM navBarLinks
+//     navBtn.onclick()
+//   })
+// })
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
